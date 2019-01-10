@@ -3,17 +3,42 @@
 class QueryBuilder 
 {
     protected $config;
-    public function __construct($config)
+    protected $table;
+    protected $pdo;
+    protected $primary = "id";
+ 
+    public function __construct()
     {
-        $this->config=$config;
+        
+        $this->config = require 'core/config.php';
+        $this->pdo = Connection::make($this->config["database"]);
+
     }
-    public function selectAll($table)
-    {
-        $pdo = Connection::make($this->config["database"]);
-        $query = "SELECT * FROM {$table}";
-        $statement = $pdo->prepare($query);
+
+    public function selectAll(){
+        ///try {
+
+        // }
+        $query="SELECT * FROM {$this->table}";
+        $statement = $this->pdo->prepare($query);
         $statement->execute();
-        $result = $statement->fetchAll();
+        $result = $statement->fetchAll(PDO::FETCH_OBJ);
         return $result;
     }
+
+    public function find($id)
+    {
+        try {
+            $query = "SELECT * FROM {$this->table} WHERE {$this->primary}={$id}";
+            $statement = $this->pdo->prepare($this->query);
+            $statement->execute();
+            $result = $statement->fetchAll();
+            return $result;
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
+    }
+
+    //public function join($table)
 }
