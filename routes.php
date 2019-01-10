@@ -1,5 +1,3 @@
 <?php 
 
-$router->define([
-    ""=>"controllers/AgendaController.php"
-]);
+$router->get("","AgendaController@index");

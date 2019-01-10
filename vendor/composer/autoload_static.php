@@ -8,6 +8,10 @@ class ComposerStaticInit5464c83a64e5432247181bd3871e4ff4
 {
     public static $classMap = array (
         'Agenda' => __DIR__ . '/../..' . '/models/Agenda.php',
+        'AgendaController' => __DIR__ . '/../..' . '/controllers/AgendaController.php',
+        'ComposerAutoloaderInit5464c83a64e5432247181bd3871e4ff4' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
+        'Composer\\Autoload\\ComposerStaticInit5464c83a64e5432247181bd3871e4ff4' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Connection' => __DIR__ . '/../..' . '/core/Connection.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',

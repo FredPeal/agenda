@@ -4,4 +4,4 @@
 require 'core/core.php';
 
  $router= Router::load('routes.php');
-require $router->direct(Request::uri());
+ $router->direct(Request::uri(),Request::method());

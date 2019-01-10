@@ -1,5 +1,11 @@
 <?php
-         $agenda = new Agenda;
-        $todos = $agenda->selectAll();
-        include 'views/index.view.php';
-      
+
+class AgendaController 
+{
+        public function index()
+        {
+                $agenda=new Agenda;
+                $todos = $agenda->selectAll();
+                require 'views/index.view.php';
+        }
+}

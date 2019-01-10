@@ -7,6 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Agenda' => $baseDir . '/models/Agenda.php',
+    'AgendaController' => $baseDir . '/controllers/AgendaController.php',
+    'ComposerAutoloaderInit5464c83a64e5432247181bd3871e4ff4' => $vendorDir . '/composer/autoload_real.php',
+    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
+    'Composer\\Autoload\\ComposerStaticInit5464c83a64e5432247181bd3871e4ff4' => $vendorDir . '/composer/autoload_static.php',
     'Connection' => $baseDir . '/core/Connection.php',
     'QueryBuilder' => $baseDir . '/core/QueryBuilder.php',
     'Request' => $baseDir . '/core/Request.php',
