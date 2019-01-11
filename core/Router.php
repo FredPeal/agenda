@@ -27,7 +27,19 @@ class Router
         self::$routes["GET"][$uri] = $controller;
     }
 
-    
+    public static function post($uri,$controller)
+    {
+        self::$routes["POST"][$uri] = $controller;
+    }
+
+    public static function resource($uri,$controller)
+    {
+        self::$routes["GET"][$uri] = $controller. '@'. 'index';
+        self::$routes["POST"][$uri] = $controller. '@'. 'store';
+        self::$routes["GET"][$uri .'/show'] = $controller. '@'. 'show';
+
+    }
+
     public function direct($uri,$requestType)
     {
          if (array_key_exists($uri,self::$routes[$requestType])) 
@@ -44,6 +56,8 @@ class Router
     {
 
         if (! method_exists($controller,$action)) {
+            var_dump($controller);
+            var_dump($action);
             throw new Exception("No Existe el metodo");
         }else 
         {
@@ -51,3 +65,5 @@ class Router
         }
     }
 }
+
+// /post/{id}/edit* post($id)

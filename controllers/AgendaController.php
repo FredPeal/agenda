@@ -6,6 +6,17 @@ class AgendaController
         {
                 $agenda=new Agenda;
                 $todos = $agenda->selectAll();
-                require 'views/index.view.php';
+                var_dump($_GET["name"]);
+                //require 'views/index.view.php';
         }
-}
+
+        public function store()
+        {
+
+        }
+
+        public function show()
+        {
+                
+        }
+}       

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe
+class ComposerStaticInitfb94fffdd98e51ff589ab33475597830
 {
     public static $files = array (
         '72142d7b40a3a0b14e91825290b5ad82' => __DIR__ . '/..' . '/cakephp/core/functions.php',
@@ -116,7 +116,6 @@ class ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe
     public static $classMap = array (
         'Agenda' => __DIR__ . '/../..' . '/models/Agenda.php',
         'AgendaController' => __DIR__ . '/../..' . '/controllers/AgendaController.php',
-        'App\\Core\\Bootstrap' => __DIR__ . '/../..' . '/Core/bootstrap.php',
         'Cake\\Cache\\Cache' => __DIR__ . '/..' . '/cakephp/cache/Cache.php',
         'Cake\\Cache\\CacheEngine' => __DIR__ . '/..' . '/cakephp/cache/CacheEngine.php',
         'Cake\\Cache\\CacheEngineInterface' => __DIR__ . '/..' . '/cakephp/cache/CacheEngineInterface.php',
@@ -306,10 +305,7 @@ class ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe
         'Cake\\Utility\\Security' => __DIR__ . '/..' . '/cakephp/utility/Security.php',
         'Cake\\Utility\\Text' => __DIR__ . '/..' . '/cakephp/utility/Text.php',
         'Cake\\Utility\\Xml' => __DIR__ . '/..' . '/cakephp/utility/Xml.php',
-        'ComposerAutoloaderInit4ffce0b94c1eaa6b89b69b6e7eb26efe' => __DIR__ . '/..' . '/composer/autoload_real.php',
-        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe' => __DIR__ . '/..' . '/composer/autoload_static.php',
-        'Connection' => __DIR__ . '/../..' . '/Core/Connection.php',
+        'Connection' => __DIR__ . '/../..' . '/core/Connection.php',
         'Phinx\\Config\\Config' => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx/Config/Config.php',
         'Phinx\\Config\\ConfigInterface' => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx/Config/ConfigInterface.php',
         'Phinx\\Config\\NamespaceAwareInterface' => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx/Config/NamespaceAwareInterface.php',
@@ -386,9 +382,9 @@ class ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
-        'QueryBuilder' => __DIR__ . '/../..' . '/Core/QueryBuilder.php',
-        'Request' => __DIR__ . '/../..' . '/Core/Request.php',
-        'Router' => __DIR__ . '/../..' . '/Core/Router.php',
+        'QueryBuilder' => __DIR__ . '/../..' . '/core/QueryBuilder.php',
+        'Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Symfony\\Component\\Config\\ConfigCache' => __DIR__ . '/..' . '/symfony/config/ConfigCache.php',
         'Symfony\\Component\\Config\\ConfigCacheFactory' => __DIR__ . '/..' . '/symfony/config/ConfigCacheFactory.php',
         'Symfony\\Component\\Config\\ConfigCacheFactoryInterface' => __DIR__ . '/..' . '/symfony/config/ConfigCacheFactoryInterface.php',
@@ -590,9 +586,9 @@ class ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4ffce0b94c1eaa6b89b69b6e7eb26efe::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfb94fffdd98e51ff589ab33475597830::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfb94fffdd98e51ff589ab33475597830::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitfb94fffdd98e51ff589ab33475597830::$classMap;
 
         }, null, ClassLoader::class);
     }

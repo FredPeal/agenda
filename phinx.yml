@@ -7,19 +7,19 @@ environments:
     default_database: development
     production:
         adapter: mysql
-        host: localhost
-        name: production_db
+        host: 172.21.0.9
+        name: agenda
         user: root
-        pass: ''
+        pass: 'NshBjkBtcc'
         port: 3306
         charset: utf8
 
     development:
         adapter: mysql
-        host: localhost
-        name: development_db
+        host: 172.21.0.9
+        name: agenda
         user: root
-        pass: ''
+        pass: 'NshBjkBtcc'
         port: 3306
         charset: utf8
 

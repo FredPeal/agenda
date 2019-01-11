@@ -40,5 +40,11 @@ class QueryBuilder
 
     }
 
+    public function create($array)
+    {
+        $query = sprintf("INSERT INTO %s(%s) VALUES(%s)", implode(',',$array), ':' . implode(',',$array)); 
+        var_dump($query);
+    }
+
     //public function join($table)
 }

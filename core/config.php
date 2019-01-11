@@ -2,10 +2,10 @@
 
 return [
     "database"=>[
-        "host"=>"mysql:host=192.168.10.10",
+        "host"=>"mysql:host=172.21.0.9",
         "database"=>"agenda",
-        "user"=>"homestead",
-        "password"=>"secret",
+        "user"=>"root",
+        "password"=>"NshBjkBtcc",
         "options"=>[
 
         ]

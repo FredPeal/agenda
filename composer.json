@@ -1,7 +1,4 @@
 {
-    "require": {
-        "robmorgan/phinx":"0.10.6"
-    },
     "autoload": {
         "classmap": [
             "./"
@@ -12,5 +9,8 @@
             "Core/config.php",
             "routes.php"
         ]
+    },
+    "require": {
+        "robmorgan/phinx": "^0.10.6"
     }
 }
