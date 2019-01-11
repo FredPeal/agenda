@@ -2,7 +2,7 @@
 
 class Router 
 {
-    protected $routes=[
+    protected static $routes=[
         "GET"=>[],
         "POST"=>[]
     ];
@@ -22,9 +22,9 @@ class Router
         $this->routes=$routes;
     }
     
-    public function get($uri,$controller)
+    public static function get($uri,$controller)
     {
-        $this->routes["GET"][$uri] = $controller;
+        self::$routes["GET"][$uri] = $controller;
     }
 
     

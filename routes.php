@@ -1,3 +1,3 @@
 <?php 
 
-$router->get("","AgendaController@index");
+Router::get('','AgendaController@index');
