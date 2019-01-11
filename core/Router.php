@@ -36,7 +36,10 @@ class Router
     {
         self::$routes["GET"][$uri] = $controller. '@'. 'index';
         self::$routes["POST"][$uri] = $controller. '@'. 'store';
-        self::$routes["GET"][$uri .'/show'] = $controller. '@'. 'show';
+        self::$routes["GET"][$uri . '/param'] = $controller. '@'. 'show';
+        self::$routes["GET"][$uri . '/param/edit'] = $controller. '@'. 'edit';
+        self::$routes["PUT"][$uri] = $controller . '@' .'update';
+        
 
     }
 
