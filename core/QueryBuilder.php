@@ -10,7 +10,7 @@ class QueryBuilder
     public function __construct()
     {
         
-        $this->config = require 'core/config.php';
+        $this->config = require 'config.php';
         $this->pdo = Connection::make($this->config["database"]);
 
     }
