@@ -1,7 +1,16 @@
 {
+    "require": {
+        "robmorgan/phinx":"0.10.6"
+    },
     "autoload": {
         "classmap": [
             "./"
+        ],
+        "files": [
+            "public/index.php",
+            "Core/bootstrap.php",
+            "Core/config.php",
+            "routes.php"
         ]
     }
 }
